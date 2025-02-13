@@ -20,9 +20,8 @@ function Aboutsection(){
                 <Carousel image = {firtcarousel}/>
 
                 <div className="text">
-                        <h1 style={{fontSize:'20px', color:'white',textAlign:'right'}}> what is lulu  Rainbow  picnic? </h1>
-                        <p style={{fontSize:'10px', margin:'10px 0px 10px', textAlign:'right'}}> Lulu’s Colorful Feast is a fun and unique picnic where each guest picks a color and brings food that matches it! 🌈 Whether it’s red strawberries, yellow pineapple, or green guacamole, your plate will be as vibrant as the day. No plus-ones—just good vibes, great food, and a colorful feast! 🎉🍽️
-                        Pick a color. Bring the food. Enjoy the fun!</p>
+                        <h1 style={{fontSize:'20px', color:'white',textAlign:'right', textTransform:'capitalize'}}> what is lulu  Rainbow  picnic? </h1>
+                        <p style={{fontSize:'13px', margin:'0px', textAlign:'right'}}> Lulu’s Colorful Feast is a unique picnic where each guest picks a color and brings matching food. Enjoy vibrant plates, good vibes, and great food! just fun! 🌈🎉🍽️</p>
                 </div>
 
             </div>
