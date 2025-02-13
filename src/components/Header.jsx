@@ -9,10 +9,10 @@ function Header() {
     
 
     const secondcarousel = [
-        'public/img/IMG-20250210-WA0012.jpg',
-        'public/img/IMG-20250210-WA0009.jpg',
-        'public/img/IMG-20250210-WA0011.jpg',
-        'public/img/IMG-20250210-WA0018.jpg',
+        '/img/IMG-20250210-WA0012.jpg',
+        '/img/IMG-20250210-WA0009.jpg',
+        '/img/IMG-20250210-WA0011.jpg',
+        '/img/IMG-20250210-WA0008.jpg',
     ];
     const headertext = (
         <div>

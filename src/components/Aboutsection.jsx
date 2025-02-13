@@ -6,8 +6,8 @@ import Detailss from "./Details";
 function Aboutsection(){
 
     const firtcarousel = [
-        'public/img/WhatsApp Image 2025-02-09 at 16.45.57_9f4e3196.jpg',
-        'public/img/download (3).jpg'
+        './img/WhatsApp Image 2025-02-09 at 16.45.57_9f4e3196.jpg',
+        './img/download (3).jpg'
     ]
 
   
