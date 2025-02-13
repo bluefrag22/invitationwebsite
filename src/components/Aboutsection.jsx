@@ -10,6 +10,10 @@ function Aboutsection(){
         './img/download (3).jpg'
     ]
 
+    const location = () => {
+        window.open('https://maps.app.goo.gl/dvS4zvBYttpNrSav7', '_blank');
+    };
+
   
 
     return(
@@ -20,7 +24,7 @@ function Aboutsection(){
                 <Carousel image = {firtcarousel}/>
 
                 <div className="text">
-                        <h1 style={{fontSize:'20px', color:'white',textAlign:'right', textTransform:'capitalize'}}> what is lulu  Rainbow  picnic? </h1>
+                        <h1 style={{fontSize:'15px', color:'white',textAlign:'right', textTransform:'capitalize',marginBottom:'5px'}}> what is lulu  Rainbow  picnic? </h1>
                         <p style={{fontSize:'13px', margin:'0px', textAlign:'right'}}> Lulu’s Colorful Feast is a unique picnic where each guest picks a color and brings matching food. Enjoy vibrant plates, good vibes, and great food! just fun! 🌈🎉🍽️</p>
                 </div>
 
@@ -30,7 +34,7 @@ function Aboutsection(){
             <div className="detaailsrow">
                 <Detailss title="Date" content="20th  Feb" br />
                 <Detailss title="Time" content="2pm" />
-                <Detailss title="Location" content={<span className="small-text">Click for direction</span>} />
+                <Detailss title="Location" content={<span className="small-text">Click for direction</span>} direction={location}/>
             </div>
 
            

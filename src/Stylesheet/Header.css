@@ -72,8 +72,9 @@
 }
 
 .small-text {
-    font-size: 11px;  /* Adjust the size as needed */
-    color: gray;  /* Optional: Change color to make it subtle */
+    font-size: 10px;  /* Adjust the size as needed */
+    color: rgb(0, 0, 0);
+    line-break: auto;  /* Optional: Change color to make it subtle */
 }
 
 
