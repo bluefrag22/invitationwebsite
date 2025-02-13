@@ -4,6 +4,8 @@ import emailjs from "@emailjs/browser";
 const App = () => {
   const [foodcolor, setFoodcolor] = useState("");
   const [userInfo, setUserInfo] = useState({ name: "", email: "" });
+  const [plusone, setPlusone] = useState(0)
+  const [imagehandler, setImagehandler] = useState(null)
 
   const colorselector = [
     { name: "red", code: "#FF0000" },
@@ -26,6 +28,17 @@ const App = () => {
     setFoodcolor(colorName);
   };
 
+  const handleImageChange =(e)=>{
+    const file = e.target.files[0];
+    if(file){
+      const reader = new FileReader();
+      reader.onload = ()=>{
+        setImagehandler(reader.result)
+      }
+      reader.readAsDataURL(file);
+    }}
+    
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -41,6 +54,8 @@ const App = () => {
       message: "Thank you for registering!" +userInfo.name + "\n" + "Your selected color is: " + foodcolor,
     };
 
+
+ 
     emailjs
       .send("service_vtmrbzd", "template_1bi7ipv", templateParams, "Ji33v0GarIE0wHe3q")
       .then((response) => {
@@ -57,6 +72,9 @@ const App = () => {
     <div className="App">
       <h2>Registration</h2>
       <p>Please fill in the form below to register for the event.</p>
+
+     
+
       <form onSubmit={sendEmail}>
         <div className="label">
           <label>
@@ -69,6 +87,27 @@ const App = () => {
           </label>
         </div>
         
+        <div className="plusone">
+          <div>
+            <p className="textplusone">Plusone:</p><button  onClick={(e)=>{
+                if(plusone !== 0){
+                  e.preventDefault()
+                  setPlusone(plusone - 1)
+                }
+              }}>-</button> <p>{plusone}</p> <button  onClick={(e)=>{
+                e.preventDefault()
+                setPlusone(plusone + 1)
+              }}>+</button>
+          </div>
+            <p style={{fontSize:'0.8rem'}}> Note: plusones adds extra fee of 10k 
+              make payment to this account  and upload a screen of payment below
+            </p>
+            <label className="uploadimg" >
+              Upload Image:
+              <input type="file" accept="image/*" onChange={handleImageChange} />
+            </label>
+            {/* <img src={imagehandler} alt="" /> */}
+          </div>
 
         <h3 className="colorheader">Selected Color: {foodcolor}</h3>
 

@@ -32,7 +32,7 @@ function Aboutsection(){
 
 
             <div className="detaailsrow">
-                <Detailss title="Date" content="20th  Feb" br />
+                <Detailss title="Date" content="23th  Feb" br />
                 <Detailss title="Time" content="2pm" />
                 <Detailss title="Location" content={<span className="small-text">Click for direction</span>} direction={location}/>
             </div>

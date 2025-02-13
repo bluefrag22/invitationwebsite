@@ -153,6 +153,47 @@
     outline: none;
 }
 
+.plusone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    
+    
+}
+
+.plusone div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    
+    margin: 0px;
+}
+
+.plusone p{
+    color: white;
+    font-size: 0.9rem;
+}
+
+.plusone button{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background-color: #ff28b7;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.plusone label{
+    color: white;
+    font-size: 0.8rem;
+}
+
 .colorheader{
     margin: 20px 10px 20px;
     color: #ff28b7;
