@@ -8,7 +8,7 @@ function Detailss({title, content,ddirection}){
 
             <div className="box" style={{backgroundColor:'white', width:'50px', height:'50px', borderRadius:'10px',display:'flex', justifyContent:'center', alignItems:'center', }} onClick={direction}>
 
-            <p className="boxtext" style={{textAlign:'center', padding:'auto', fontSize:'15px',textTransform:'capitalize',fontWeight:'bolder',padding:'5px'}}>{content}</p>
+            <p className="boxtext" style={{textAlign:'center', fontSize:'15px',textTransform:'capitalize',fontWeight:'bolder',padding:'5px'}}>{content}</p>
             </div>
             
         </div>
