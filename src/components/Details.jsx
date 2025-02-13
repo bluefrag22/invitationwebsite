@@ -1,6 +1,6 @@
 
 
-function Detailss({title, content,ddirection}){
+function Detailss({title, content,direction}){
     return(
         
         <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', margin:'10px 0px 10px'}}>
